@@ -46,5 +46,13 @@ namespace ChinookSystem.Entities
 			get { return _ReleaseLabel;  }
 			set { _ReleaseLabel = string.IsNullOrEmpty(value) ? null : value; }
 		}
+
+		//navigational properties
+		//link Album table to Artist table
+		//virtual is always used for navigational properties
+		//many to 1 relationship
+		//create one end of the relationship in this entity
+		public virtual Artist Artist { get; set; }
+		public virtual ICollection<Track> Tracks { get; set; }
 	}
 }

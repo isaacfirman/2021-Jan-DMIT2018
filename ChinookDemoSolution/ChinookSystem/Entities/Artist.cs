@@ -27,5 +27,12 @@ namespace ChinookSystem.Entities
 			get { return _Name; }
 			set { _Name = string.IsNullOrEmpty(value) ? null : value;  }
 		}
+
+		//you can use [NotMapped]
+
+		//navigational properties
+		//1 to many relationship, create the many relationships in this entity
+		//artists has a collection of albums, an album beling to one artist
+		public virtual ICollection<Album> Albums { get; set; }
 	}
 }
