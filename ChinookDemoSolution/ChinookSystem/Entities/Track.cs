@@ -24,10 +24,9 @@ namespace ChinookSystem.Entities
 		public string Name { get; set; }
 
 		//nullable FK
-		public int AlbumId { get; set; }
+		public int? AlbumId { get; set; }
 
 		//FK
-		[Required(ErrorMessage = "Media type ID is required")]
 		public int MediaTypeId { get; set; }
 
 		public int GenreId { get; set; }
@@ -39,13 +38,13 @@ namespace ChinookSystem.Entities
 			set { _Composer = string.IsNullOrEmpty(value) ? null : value; }
 		}
 
-		[Required(ErrorMessage = "Milliseconds is required.")]
+		//[Required(ErrorMessage = "Milliseconds is required.")] //default value of a nnumeric value is 0
 		public int Milliseconds { get; set; }
 
-		public int Bytes { get; set; }
+		public int? Bytes { get; set; }
 
-		[Required(ErrorMessage = "UnitPrice is required.")]
-		//[RegularExpression()].....decimal(10,2)use \b\d{1,10}\.\d{1,2}\b
+		
+		//[RegularExpression()].....decimal(10,2)use \b\d{1,10}\.\d{1,2}\b do it in presentation layer... database should not do presentation work
 		public decimal UnitPrice { get; set; }
 
 		//navigation
