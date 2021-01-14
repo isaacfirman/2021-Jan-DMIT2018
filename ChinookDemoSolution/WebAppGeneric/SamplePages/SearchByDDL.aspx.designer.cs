@@ -15,21 +15,57 @@ namespace WebAppGeneric.SamplePages
 	{
 
 		/// <summary>
-		/// GridView1 control.
+		/// Label1 control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.GridView GridView1;
+		protected global::System.Web.UI.WebControls.Label Label1;
 
 		/// <summary>
-		/// ObjectDataSource1 control.
+		/// ArtistList control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+		protected global::System.Web.UI.WebControls.DropDownList ArtistList;
+
+		/// <summary>
+		/// SearchAlbums control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.LinkButton SearchAlbums;
+
+		/// <summary>
+		/// MessageLabel control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Label MessageLabel;
+
+		/// <summary>
+		/// ArtistAlbumList control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.GridView ArtistAlbumList;
+
+		/// <summary>
+		/// ArtistNameListODS control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.ObjectDataSource ArtistNameListODS;
 	}
 }
